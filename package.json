@@ -1,0 +1,43 @@
+{
+  "name": "511ds.com",
+  "version": "1.0.0",
+  "description": "迪赛智慧数平台",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "zcw",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "15.0.0-beta.2",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.511ds.app",
+    "productName": "迪赛智慧数平台",
+    "asar": false,
+    "files": [
+      "!dist",
+      "!build",
+      "!node_modules"
+    ],
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "createDesktopShortcut": true
+    },
+    "win": {
+      "icon": "build/logo.png"
+    },
+    "mac": {
+      "icon": "build/512.png"
+    },
+    "linux": {
+      "icon": "build/512.png"
+    }
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.206"
+  }
+}
