@@ -7,8 +7,8 @@
     "start": "electron .",
     "build": "electron-builder --win"
   },
-  "author": "zcw",
-  "license": "ISC",
+  "author": "511ds.com",
+  "license": "MIT",
   "devDependencies": {
     "electron": "15.0.0-beta.2",
     "electron-builder": "^23.6.0"
